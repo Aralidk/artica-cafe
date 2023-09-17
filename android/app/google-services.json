@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "903443261144",
+    "project_id": "dental-dentist",
+    "storage_bucket": "dental-dentist.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903443261144:android:2887167d233222f8cc59ad",
+        "android_client_info": {
+          "package_name": "aralid.dental.dental_dentist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC40F8qx79fGYJvfp8l_Ged6lGJd3g9DA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
