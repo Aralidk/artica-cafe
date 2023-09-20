@@ -38,10 +38,10 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home> {
                 foods,
                 (index, i) {
                   Map food = foods[index];
-                  return  SliderItem(
+                  return SliderItem(
                     img: food["img"],
                     isFav: false,
-                    name:  food["name"],
+                    name: food["name"],
                     rating: 5.0,
                     raters: 23,
                   );
@@ -87,7 +87,8 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home> {
                     return CategoryItemsView(
                       categoryName: "Kahve",
                       menuItems: snapshot.data!,
-                      image: "https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                      image:
+                          "https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                     );
                   } else {
                     return const Center(
@@ -101,7 +102,8 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home> {
                     return CategoryItemsView(
                       categoryName: "MilkShake",
                       menuItems: snapshot.data!,
-                      image: "https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                      image:
+                          "https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                     );
                   } else {
                     return const Center(
@@ -115,7 +117,8 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home> {
                     return CategoryItemsView(
                       categoryName: "Bubble Tea",
                       menuItems: snapshot.data!,
-                      image: "https://images.pexels.com/photos/8911656/pexels-photo-8911656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                      image:
+                          "https://images.pexels.com/photos/8911656/pexels-photo-8911656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                     );
                   } else {
                     return const Center(
@@ -129,7 +132,8 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home> {
                     return CategoryItemsView(
                       categoryName: "Frozen",
                       menuItems: snapshot.data!,
-                      image: "https://images.pexels.com/photos/6542727/pexels-photo-6542727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                      image:
+                          "https://images.pexels.com/photos/6542727/pexels-photo-6542727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                     );
                   } else {
                     return const Center(
@@ -143,7 +147,8 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home> {
                     return CategoryItemsView(
                       categoryName: "Diğer",
                       menuItems: snapshot.data!,
-                      image: "https://images.pexels.com/photos/4093362/pexels-photo-4093362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                      image:
+                          "https://images.pexels.com/photos/4093362/pexels-photo-4093362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                     );
                   } else {
                     return const Center(
@@ -163,7 +168,9 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home> {
 class CategoryItemsView extends StatelessWidget {
   const CategoryItemsView({
     super.key,
-    required this.menuItems, required this.image, required this.categoryName,
+    required this.menuItems,
+    required this.image,
+    required this.categoryName,
   });
   final List<MenuItem> menuItems;
   final String image;
@@ -177,9 +184,7 @@ class CategoryItemsView extends StatelessWidget {
         Text(
           categoryName,
           style: const TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.w800,
-              color: Colors.red),
+              fontSize: 30, fontWeight: FontWeight.w800, color: Colors.red),
         ),
         const SizedBox(height: 30),
         GridView.builder(
@@ -191,10 +196,10 @@ class CategoryItemsView extends StatelessWidget {
               crossAxisSpacing: 20,
               mainAxisExtent: 250,
               maxCrossAxisExtent: 400),
-          itemCount: menuItems.length ?? 0,
+          itemCount: menuItems.length,
           itemBuilder: (BuildContext context, int index) {
             return GridProduct(
-              img:image,
+              img: image,
               isFav: false,
               name: menuItems[index].name,
               rating: 5.0,
