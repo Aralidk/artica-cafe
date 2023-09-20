@@ -3,27 +3,27 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 List categories = [
   {
     "name": "Kahve",
-    "icon": FontAwesomeIcons.wineBottle,
+    "icon": FontAwesomeIcons.coffee,
     "items": 5
   },
   {
     "name": "Milkshake",
-    "icon": FontAwesomeIcons.cannabis,
+    "icon": FontAwesomeIcons.iceCream,
     "items": 20
   },
   {
     "name": "Frozen",
-    "icon": FontAwesomeIcons.birthdayCake,
+    "icon": FontAwesomeIcons.cubes,
     "items": 9
   },
   {
     "name": "Bubble Tea",
-    "icon": FontAwesomeIcons.pizzaSlice,
+    "icon": FontAwesomeIcons.bowlingBall,
     "items": 5
   },
   {
     "name": "Diğer",
-    "icon": FontAwesomeIcons.breadSlice,
+    "icon": FontAwesomeIcons.cocktail,
     "items": 15
   },
 ];
